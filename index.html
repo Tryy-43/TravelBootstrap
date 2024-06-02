@@ -3,31 +3,169 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Assignment</title>
+    <title>Comprehensive Bootstrap Form</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="wrapper">
-      <div class="header">
-        <h1>Header</h1>
-      </div>
-      <div class="nav">
-        <h2>Navigation</h2>
-      </div>
-      <div class="container">
-        <div class="box">
-          <h3>Content-1</h3>
+    <div class="container mt-5">
+      <form>
+        <!-- Text Input -->
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+          />
         </div>
-        <div class="box">
-          <h3>Content-1</h3>
+
+        <!-- Email Input -->
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+          />
         </div>
-        <div class="box">
-          <h3>Content-1</h3>
+
+        <!-- Password Input -->
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+          />
         </div>
-      </div>
-      <div class="footer">
-        <h2>footer</h2>
-      </div>
+
+        <!-- File Input -->
+        <div class="form-group">
+          <label for="file">Upload File:</label>
+          <input type="file" class="form-control-file" id="file" name="file" />
+        </div>
+
+        <!-- Textarea -->
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea
+            class="form-control"
+            id="message"
+            name="message"
+            rows="3"
+            placeholder="Enter your message"
+          ></textarea>
+        </div>
+
+        <!-- Select Dropdown -->
+        <div class="form-group">
+          <label for="country">Major:</label>
+          <select class="form-control" id="country" name="country">
+            <option>IT</option>
+            <option>CS</option>
+            <option>BA</option>
+            <option>ITE</option>
+          </select>
+        </div>
+
+        <!-- Radio Buttons -->
+        <div class="form-group">
+          <label>Gender:</label><br />
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="gender"
+              id="male"
+              value="male"
+            />
+            <label class="form-check-label" for="male">Male</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="gender"
+              id="female"
+              value="female"
+            />
+            <label class="form-check-label" for="female">Female</label>
+          </div>
+        </div>
+
+        <!-- Checkboxes -->
+        <div class="form-group">
+          <label>Hobbies:</label><br />
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="hobby1"
+              name="hobbies"
+              value="reading"
+            />
+            <label class="form-check-label" for="hobby1">Reading</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="hobby2"
+              name="hobbies"
+              value="traveling"
+            />
+            <label class="form-check-label" for="hobby2">Traveling</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="hobby3"
+              name="hobbies"
+              value="cooking"
+            />
+            <label class="form-check-label" for="hobby3">Cooking</label>
+          </div>
+        </div>
+
+        <!-- Date Input -->
+        <div class="form-group">
+          <label for="dob">Date of Birth:</label>
+          <input type="date" class="form-control" id="dob" name="dob" />
+        </div>
+
+        <!-- URL Input -->
+
+        <!-- Tel Input -->
+        <div class="form-group">
+          <label for="phone">Phone:</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="phone"
+            name="phone"
+            placeholder="Enter your phone number"
+          />
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
