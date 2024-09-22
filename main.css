@@ -83,7 +83,7 @@
   background-color: #f23c4e79;
 }
 .header-custom {
-  background-color: var(--seconde-color);
+  background-color: var(--main-color);
 }
 .item-modal {
   height: 200px;
@@ -155,11 +155,13 @@
   height: auto;
 }
 .description {
-  font-weight: 500;
+  font-weight: 500 !important ;
+  opacity: 0.8 !important;
 }
 .break {
   padding: 0px 20px !important;
 }
+
 .div-discoverd::after {
   content: "";
   width: 100px;
@@ -474,6 +476,35 @@ footer {
   color: var(--main-color);
   font-size: 20px;
 }
+.btn-payment,
+.btn-delete {
+  background-color: var(--main-color);
+  transition: 0.3s ease;
+  color: #fff !important;
+}
+.btn-payment:hover,
+.btn-delete:hover {
+  background-color: var(--main-hover);
+  transform: scale(1.03);
+  font-size: bold !important;
+}
+.total > p {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+.total > p > span {
+  color: var(--main-color);
+  font-weight: bold;
+}
+.name-order {
+  font-weight: 500 !important;
+}
+.table-hover > tbody > tr:hover > * {
+  --bs-table-color-state: var(--bs-table-hover-color) inherit;
+  --bs-table-bg-state: var(--bs-table-hover-bg) inherit;
+  background-color: var(--seconde-color) !important;
+}
 @keyframes circlee {
   to {
     transform: rotate(0deg);
@@ -567,8 +598,8 @@ footer {
     width: 100% !important;
   }
   .img-slider {
-    width: 230px !important;
-    height: 230px !important;
+    width: 200px !important;
+    height: 200px !important;
   }
 }
 @media screen and (min-width: 576px) {

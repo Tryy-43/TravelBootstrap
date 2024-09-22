@@ -18,7 +18,3 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-scrollbar",
   },
 });
-// const anima = document.querySelector(".wrap-icon > span > i");
-// anima.addEventListener("mouseleave", (e) => {
-//   console.log("dd");
-// });

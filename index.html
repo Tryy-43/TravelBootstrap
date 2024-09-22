@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Via Tryy43</title>
+    <link rel="icon" type="image/JPG" href="travel.png" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link
@@ -107,8 +108,8 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header header-custom">
-            <h1 class="modal-title fs-5" id="exampleModalLabeltwo">
-              Modal title
+            <h1 class="modal-title fs-5 text-light" id="exampleModalLabeltwo">
+              Your orders
             </h1>
             <button
               type="button"
@@ -118,8 +119,47 @@
             ></button>
           </div>
           <div class="modal-body">
-            <p class="fw-light fs-6">Don't have yer?</p>
-            <div class="item-modal"></div>
+            <div class="item-modal">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Resort</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Manage</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="name-order">Woodland Cabin</td>
+                    <td>x1</td>
+                    <th scope="row">
+                      <button
+                        class="btn-delete btn btn-sm text-light fw-medium"
+                      >
+                        Delete
+                      </button>
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="name-order">Forest Retreat</td>
+                    <td>x1</td>
+                    <th scope="row">
+                      <button
+                        class="btn-delete btn btn-sm text-light fw-medium"
+                      >
+                        Delete
+                      </button>
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+              <div
+                class="total d-flex justify-content-end align-items-center gap-4"
+              >
+                <p class="p-0 m-0">Total : <span class="p-0 m-0">$698</span></p>
+                <div class="btn-payment btn">Payment</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -262,7 +302,7 @@
           <span
             class="position-absolute px-3 py-1 bg-light discount-resort z-3"
           >
-            <span class="fw-semibold price-resort fs-4">$199</span
+            <span class="fw-semibold price-resort fs-4">$399</span
             ><span>/night</span>
           </span>
           <div class="overflow-hidden rounded-top-5">
@@ -274,22 +314,22 @@
           </div>
           <div class="w-100 px-3 mt-4">
             <h1 class="text-dark fw-bold fs-5 text-start title-resort">
-              Serence Lakehouse
+              Woodland Cabin
             </h1>
             <p
               class="text-dark fw-light opacity-100 text-start fs-6 description"
             >
-              A luxurious lakefront home offering unparalleled tranquility.
+              Woodland Cabin offers a perfect blend of seclusion and charm.
             </p>
             <div class="d-flex justify-content-start align-items-center gap-4">
               <span class="text-secondary-emphasis fs-6 fw-medium info-qty"
                 ><i class="fa-solid fa-user"></i
-                ><span class="qtyOfPerson fw-bold count">3</span
+                ><span class="qtyOfPerson fw-bold count">5</span
                 ><span class="fw-medium qty-guest"> Guests</span>
               </span>
               <span class="text-secondary-emphasis fs-6 fw-medium info-qty"
                 ><i class="fa-solid fa-bed"></i
-                ><span class="qtyOfPerson fw-bold count">2</span
+                ><span class="qtyOfPerson fw-bold count">4</span
                 ><span class="fw-medium qty-guest"> Rooms</span>
               </span>
             </div>
@@ -307,7 +347,7 @@
           <span
             class="position-absolute px-3 py-1 bg-light discount-resort z-3"
           >
-            <span class="fw-semibold price-resort fs-4">$199</span
+            <span class="fw-semibold price-resort fs-4">$299</span
             ><span>/night</span>
           </span>
           <div class="overflow-hidden rounded-top-5">
@@ -319,22 +359,23 @@
           </div>
           <div class="w-100 px-3 mt-4">
             <h1 class="text-dark fw-bold fs-5 text-start title-resort">
-              Serence Lakehouse
+              Forest Retreat
             </h1>
             <p
               class="text-dark fw-light opacity-100 text-start fs-6 description"
             >
-              A luxurious lakefront home offering unparalleled tranquility.
+              Forest Retreat is surrounded by towering trees and vibrant
+              wildlife.
             </p>
             <div class="d-flex justify-content-start align-items-center gap-4">
               <span class="text-secondary-emphasis fs-6 fw-medium info-qty"
                 ><i class="fa-solid fa-user"></i
-                ><span class="qtyOfPerson fw-bold count">3</span
+                ><span class="qtyOfPerson fw-bold count">4</span
                 ><span class="fw-medium qty-guest"> Guests</span>
               </span>
               <span class="text-secondary-emphasis fs-6 fw-medium info-qty"
                 ><i class="fa-solid fa-bed"></i
-                ><span class="qtyOfPerson fw-bold count">2</span
+                ><span class="qtyOfPerson fw-bold count">3</span
                 ><span class="fw-medium qty-guest"> Rooms</span>
               </span>
             </div>
@@ -666,7 +707,11 @@
         <div
           class="col-12 col-lg-6 col-md-12 col-sm-12 mx-auto row mt-5 mt-lg-0 mt-md-5 mt-sm-5"
         >
-          <div class="row justify-content-between mx-auto p-0">
+          <div
+            class="row justify-content-between mx-auto p-0"
+            data-aos="fade-up"
+            data-aos-duration="400"
+          >
             <div
               class="col-6 d-flex flex-column gap-4 p-0"
               style="padding-right: 10px !important"
@@ -709,6 +754,9 @@
         </div>
         <div
           class="col-12 col-lg-6 col-md-12 col-sm-12 row text-start p-0"
+          data-aos="fade-up"
+          data-aos-duration="400"
+          data-aos-delay="200"
           style="padding-left: 10px !important"
         >
           <h1 class="spacial-title fw-bolder fs-1">Why We're Special</h1>
@@ -763,6 +811,9 @@
       <div
         class="swiper border border-secondary-subtle rounded-5 position-relative"
         style="background-color: #fff"
+        data-aos="fade-up"
+        data-aos-duration="400"
+        data-aos-delay="200"
       >
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
@@ -785,9 +836,9 @@
                   nunc mauris scelerisque sed egestas dolor sit amet pharetraol
                   quis pharetra arcu pharetra blandit.Sophie Moore
                 </p>
-                <p class="text-dark fw-bold fs-5 p-0 m-0">Sophie Moore</p>
+                <p class="text-dark fw-bold fs-5 p-0 m-0">Mey Soytry</p>
                 <p class="text-dark opacity-75 fw-medium fs-6 p-0 m-0">
-                  Los Angeles, CA
+                  Cambodia, PP
                 </p>
               </div>
             </div>
@@ -1062,7 +1113,11 @@
         </div>
       </div> -->
 
-      <div class="row mt-5 justify-content-between p-0 m-0 gap-4 gap-sm-0">
+      <div
+        class="row mt-5 justify-content-between p-0 m-0 gap-4 gap-sm-0"
+        data-aos="fade-up"
+        data-aos-duration="400"
+      >
         <div class="col-5-custom-size row p-0 m-0">
           <div
             class="accordion accordion-flush p-0 d-flex flex-column gap-3"
@@ -1240,7 +1295,11 @@
     <div style="height: 90px"></div>
     <!-- email -->
     <section class="px-5 container-fluid py-5">
-      <div class="text-center py-5 px-4 area-input rounded-5">
+      <div
+        class="text-center py-5 px-4 area-input rounded-5"
+        data-aos="fade-up"
+        data-aos-duration="400"
+      >
         <h1 class="fw-bold fs-2 text-light">
           Join Our Mailing List for <br />
           Adventure Enthusiasts!
@@ -1265,8 +1324,12 @@
         </div>
       </div>
     </section>
-    <div style="height: 90px"></div>
-    <footer class="container-fluid px-5" style="height: 100vh">
+    <div style="height: 60px"></div>
+    <footer
+      class="container-fluid px-5"
+      data-aos="fade-up"
+      data-aos-duration="400"
+    >
       <div style="height: 50px"></div>
 
       <div class="row m-0 p-0 justify-content-between">
@@ -1389,8 +1452,7 @@
         Clone and Developed By <span class="text-name">Mr. Mey SoyTry</span> .
         From <span class="text-name">Webflow</span>
       </p>
-      <div style="height: 50px"></div>
-      s
+      <div style="height: 10px"></div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
